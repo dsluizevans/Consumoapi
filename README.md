@@ -19,11 +19,11 @@ O projeto tem a finalidade de demonstrar a possibilidade do consumo de API,s par
 - Os
 
 ## Etapas
-1. A instalação do python-doenv, essa biblioteca permitirá carregar a variável de ambiente criada no .env, pois este arquivo conterá a senha de autenticação da API.
+1. A instalação do python-doenv permitirá carregar a variável de ambiente criada no .env, pois este arquivo conterá a senha de autenticação da API.
 2. Carregamento das bibliotecas que serão utilizadas no projeto.
-3. Criação de duas variáveis, uma para a URL e a outra para key de autenticação(.env).
+3. Criação de duas variáveis: Uma para a URL e a outra para key de autenticação(.env).
 4. Requisição e status(200) do endpoint.
-5. Criação de um DataFrame a partir da variável, para visualização dos dados trazidos pela requisiçao.
+5. Criação de um DataFrame a partir da variável que armazena dos dados trazidos pela requisiçao.
 6. Exclusão de algunas colunas que não fazia sentido para a análise e o objetivo final.
 7. Conversão das coluna do tipo "object" para "datetime"
 8. Tratamento dos valores encontrados que impactava no projeto como todo.
