@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-O projeto tem a finalidade de demonstrar a possibilidade do consumo de API,s para consultar, analisar e tratar os dados de fontes externas.
+O projeto tem a finalidade de apresentar as oscilações da cotação do dólar desde a criação da moeda real entre 1995 - 2023 e quem foram os seus governantes.
 
 ## Fonte da consulta
 [Site Fred](https://fred.stlouisfed.org)  
@@ -19,17 +19,18 @@ O projeto tem a finalidade de demonstrar a possibilidade do consumo de API,s par
 - Os
 
 ## Etapas
-1. A instalação do python-doenv permitirá carregar a variável de ambiente criada no .env, pois este arquivo conterá a senha de autenticação da API.
-2. Carregamento das bibliotecas que serão utilizadas no projeto.
-3. Criação de duas variáveis: Uma para a URL e a outra para key de autenticação(.env).
-4. Requisição e status(200) do endpoint.
-5. Criação de um DataFrame a partir da variável que armazena dos dados trazidos pela requisiçao.
-6. Exclusão de algunas colunas que não fazia sentido para a análise e o objetivo final.
-7. Conversão das coluna do tipo "object" para "datetime"
-8. Tratamento dos valores encontrados que impactava no projeto como todo.
-9. Conversão da coluna "value" para float.
-10. Conversão da coluna "date" para index.
-11. Criação de gráfico com Matplotlib da cotação do dólar dutante o período presidencial(1995 - 2023)
-12. Criação de dicionário dos periodos presidenciais.
-13. Criação de gráfico da cotação do dólar durante o período presidencial, destacando com cores o tempo de governo e as oscilações do dólar.
-14. Criação de 6 gráficos(grid de subplots) dos momentos presidenciais(1995 - 2023).
+1. **Instalação do python-doenv:** Permitirá carregar a variável de ambiente criada no .env, pois este arquivo conterá a senha de autenticação da API.
+2. **Carregamento das bibliotecas utilizadas no projeto.**
+3. **Criação de duas variáveis:** Uma para a URL e a outra para key de autenticação(.env).
+4. **Importação dos dados via API:** Os dados importados do tipo .json foram coletados via API e analisados para entender a estrutura dos dados.
+5. **Tratamento dos Dados:** Os dados passaram por limpeza e tratamento, e foram identificados informações relevantes para o objetivo do projeto.
+6. **Visualização dos Dados:**  Criação de visualizações e gráficos para melhor compreensão dos dados históricos da cotação do dólar.
+
+## Conclusão  
+O projeto proporcionou uma análise abrangente das oscilações da cotação do dólar no Brasil, cobrindo o período de 1995 a 2023, ao mesmo tempo em que mapeou os governantes durante esse intervalo de tempo. Utilizando tecnologias como Python, Pandas, Numpy, Matplotlib, e Requests, pudemos extrair dados valiosos da API do [**Site Fred**](https://fred.stlouisfed.org).
+
+A primeira etapa crucial envolveu a instalação e configuração do ambiente, assegurando o acesso seguro aos dados por meio de autenticação. Posteriormente, após o carregamento das bibliotecas necessárias, a API foi consultada para obter os dados históricos do dólar. Esses dados brutos passaram por um processo de tratamento meticuloso, incluindo limpeza e análise, para identificar padrões e informações relevantes.
+
+A visualização dos dados desempenhou um papel fundamental, oferecendo insights visuais por meio de gráficos e visualizações bem elaboradas. Isso permitiu uma compreensão mais profunda das tendências cambiais ao longo do tempo, bem como das influências políticas representadas pelos diferentes governantes.
+
+Este projeto não apenas demonstrou a importância da análise de dados históricos para entender o comportamento econômico, mas também destacou o poder das ferramentas tecnológicas modernas para extrair, processar e visualizar esses dados de maneira eficaz. Ao integrar conhecimento econômico, habilidades de programação e técnicas de visualização, conseguimos criar uma narrativa informada sobre a trajetória do dólar no Brasil durante quase três décadas.
