@@ -1,8 +1,8 @@
-# Projeto de Consumo de API para Consulta, Análise e Tratamento de Dados
+# Exploração e Tratamento dos dados das oscilações do dólar no plano real(R$) via API
 
 ## Objetivo
 
-O projeto tem a finalidade de apresentar as oscilações da cotação do dólar desde a criação da moeda real entre 1995 - 2023 e quem foram os seus governantes.
+O projeto tem a finalidade de apresentar as oscilações da cotação do dólar desde a criação do plano real entre 1995 - 2023 e quem foram os seus governantes.
 
 ## Fonte da consulta
 [Site Fred](https://fred.stlouisfed.org)  
